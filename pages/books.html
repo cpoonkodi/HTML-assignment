@@ -5,71 +5,132 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> Books </title>
+  <link rel="stylesheet" href="../style.css">
 </head>
 <body>
   <!-- My favourite books -->
-  <main>
-    <h2> My Favourite Books </h2>
-  <ul>
-    <!-- My favourite books by Author -->
-    <li><b>Books by Author</b> 
-      <!-- Books of Stephen Hawking -->
-      <ol>
-        <li>
-          <a href="https://www.hawking.org.uk/" target="_blank">
-            Stephen Hawking
-          </a>
-          <ul>
-            <li> A brief history of time </li>
-            <img src="../images/stephen-book1.jpeg" alt="A brief history of time">
-            <li> My Brief History </li>
-            <img src="../images/stephen-book2.jpeg" alt="My Brief History">
-            <li> The Universe in the Nutshell </li>
-            <img src="../images/stephen-book3.jpeg" alt="The Universe in the Nutshell">
-          </ul>
-        </li>
-        <!-- Books of A.P.J.Abdul Kalam -->
-        <li>
-          <a href="https://www.abdulkalam.com/" target="_blank">
-            A. P. J. Abdul Kalam
-          </a> 
-          <ul>
-            <li> Wings of Fire </li>
-            <img src="../images/apj-book1.jpeg" alt="Wings of Fire">
-            <li> Ignited Minds </li>
-            <img src="../images/apj-book2.jpeg" alt="Ignited Minds">
-          </ul>
-        </li>
-      </ol>
-    </li>
-    <!-- My favourite books by Subject -->
-    <li><b>Books by Subject</b>
-      <!-- Science Books list -->
-      <ol>
-        <li> Science 
-          <ul>
-            <li> The Origin of Species </li>
-            <img src="../images/science-book1.jpeg" alt="The origin of Species">
-            <li> The Selfish Gene </li>
-            <img src="../images/science-book2.jpeg" alt="The Selfish Gene">
-          </ul>
-        </li>
-        <!-- Math Books list -->
-        <li> Mathematics 
-          <ul>
-            <li> The man who counted </li>
-            <img src="../images/math-book1.jpg" alt="The man who counted">
-            <li> The universal history of Numbers </li>
-            <img src="../images/math-book2.jpg" alt="The universal history of Numbers">
-            <li> Zero </li>
-            <img src="../images/math-book3.jpg" alt="Zero">
-          </ul>
-        </li>
-      </ol>
-    </li>
-  </ul>
-  <a href="../index.html"> Home </a>&nbsp;
-  <a href="./about.html"> Back </a>
+  <main class="books-main">
+    <h1> My Favourite Books </h1>
+    <div class="books">
+      <table>
+        <caption> Books by Author </caption>
+        <thead>
+            <tr>
+              <th> Author Name </th>
+              <th> S.No </th>
+              <th> Book Image </th>
+              <th> Book Name </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td rowspan="3"> 
+                <a href="https://www.hawking.org.uk/" target="_blank"> Stephen Hawking 
+                </a>
+              </td>
+              <td> 1 </td>
+              <td> 
+                <img src="../images/stephen-book1.jpeg" alt="A brief history of time">
+              </td>
+              <td> A brief history of time </td>
+            </tr>
+            <tr>
+              <td> 2 </td>
+              <td> 
+                <img src="../images/stephen-book2.jpeg" alt="My Brief History">
+              </td>
+              <td> My Brief History </td>
+            </tr>
+            <tr>
+              <td> 3 </td>
+              <td> 
+                <img src="../images/stephen-book3.jpeg" alt="The Universe in the Nutshell">
+              </td>
+              <td> The Universe in the Nutshell </td>
+            </tr>
+            <tr>
+              <td rowspan="2"> 
+                <a href="https://www.abdulkalam.com/" target="_blank">
+                A. P. J. Abdul Kalam
+                </a> 
+              </td>
+              <td> 4 </td>
+              <td>
+                <img src="../images/apj-book1.jpeg" alt="Wings of Fire">
+              </td>
+              <td> Wings of Fire </td>
+            </tr>
+            <tr>
+              <td> 5 </td>
+              <td>
+                <img src="../images/apj-book2.jpeg" alt="Ignited Minds">
+              </td>
+              <td> Ignited Minds </td>
+            </tr>
+          </tbody>
+      </table>
+  
+  
+  
+      <table>
+        <caption> Books by Subject </caption>
+        <thead>
+            <tr>
+              <th> Subject Name  </th>
+              <th> S.No </th>
+              <th> Book Image </th>
+              <th> Book Name </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td rowspan="3"> 
+                Mathematics
+              </td>
+              <td> 1 </td>
+              <td> 
+                <img src="../images/math-book1.jpg" alt="The man who counted">
+              </td>
+              <td> The man who counted </td>
+            </tr>
+            <tr>
+              <td> 2 </td>
+              <td> 
+                <img src="../images/math-book2.jpg" alt="The universal history of Numbers">
+              </td>
+              <td> The universal history of Numbers </td>
+            </tr>
+            <tr>
+              <td> 3 </td>
+              <td> 
+                <img src="../images/math-book3.jpg" alt="Zero">
+              </td>
+              <td> Zero </td>
+            </tr>
+            <tr>
+              <td rowspan="2"> 
+                Science 
+              </td>
+              <td> 4 </td>
+              <td>
+                <img src="../images/science-book1.jpeg" alt="The origin of Species">
+              </td>
+              <td> The Origin of Species </td>
+            </tr>
+            <tr>
+              <td> 5 </td>
+              <td>
+                <img src="../images/science-book2.jpeg" alt="The Selfish Gene">
+              </td>
+              <td> The Selfish Gene </td>
+            </tr>
+          </tbody>
+      </table>
+    </div>
+  <div class="navLinks">
+    <a href="../index.html"> Home </a>&nbsp;
+    <a href="./about.html"> Back </a>
+  </div>
   </main>
   
   <!-- Footer -->
